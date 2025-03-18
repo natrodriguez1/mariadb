@@ -6,6 +6,8 @@ module.exports = {
     let [fotos, fotos_metadata] = await queryInterface.sequelize.query('SELECT id FROM fotos')
     let [etiquetas, etiquetas_metadata] = await queryInterface.sequelize.query('SELECT id FROM etiquetas')
     await queryInterface.bulkInsert('fotoetiquetas', [
+      { foto_id: fotos[0].id, etiqueta_id: etiquetas[4].id, createdAt: new Date(), updatedAt: new Date() },
+
       { foto_id: fotos[1].id, etiqueta_id: etiquetas[3].id, createdAt: new Date(), updatedAt: new Date() },
       { foto_id: fotos[1].id, etiqueta_id: etiquetas[7].id, createdAt: new Date(), updatedAt: new Date() },
 
@@ -62,7 +64,39 @@ module.exports = {
       { foto_id: fotos[19].id, etiqueta_id: etiquetas[4].id, createdAt: new Date(), updatedAt: new Date() },
 
       { foto_id: fotos[20].id, etiqueta_id: etiquetas[5].id, createdAt: new Date(), updatedAt: new Date() },
-      { foto_id: fotos[20].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new Date() }
+      { foto_id: fotos[20].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[22].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[22].id, etiqueta_id: etiquetas[4].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[22].id, etiqueta_id: etiquetas[7].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[23].id, etiqueta_id: etiquetas[0].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[23].id, etiqueta_id: etiquetas[3].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[24].id, etiqueta_id: etiquetas[2].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[24].id, etiqueta_id: etiquetas[5].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[24].id, etiqueta_id: etiquetas[6].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[25].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[25].id, etiqueta_id: etiquetas[4].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[26].id, etiqueta_id: etiquetas[2].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[26].id, etiqueta_id: etiquetas[5].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[26].id, etiqueta_id: etiquetas[0].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[27].id, etiqueta_id: etiquetas[7].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[27].id, etiqueta_id: etiquetas[3].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[28].id, etiqueta_id: etiquetas[6].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[28].id, etiqueta_id: etiquetas[2].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[28].id, etiqueta_id: etiquetas[5].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[29].id, etiqueta_id: etiquetas[4].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[29].id, etiqueta_id: etiquetas[0].id, createdAt: new Date(), updatedAt: new Date() },
+
+      { foto_id: fotos[30].id, etiqueta_id: etiquetas[1].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[30].id, etiqueta_id: etiquetas[3].id, createdAt: new Date(), updatedAt: new Date() },
+      { foto_id: fotos[30].id, etiqueta_id: etiquetas[7].id, createdAt: new Date(), updatedAt: new Date() }
+
     ], 
     {});
   },
