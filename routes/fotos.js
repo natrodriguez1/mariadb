@@ -105,7 +105,7 @@ router.get('/findAllByRate/view', function(req, res, next) {
         }
     })
     .then(fotos => {
-        res.render('fotos', { title: 'Fotos', arrFotos: fotos} );
+        res.render('fotos-by-rate', { title: 'Fotos', arrFotos: fotos} );
     })
     .catch(error => res.status(400).send(error))
     
